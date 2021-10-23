@@ -1,85 +1,49 @@
 ---
-import { Markdown } from 'astro/components';
+import pose_du_coach from '../assets/images/pose_du_coach.jpg';
+import arrowdown from '../assets/icons/arrowdown.svg';
+
+
 ---
-<article>
-    <div class="banner">
-        <p><strong>🧑‍🚀 Seasoned astronaut?</strong> Delete this file. Have fun!</p>
-    </div>
 
-    <section>
-        <Markdown>
-            ## 🚀 Project Structure
-
-            Inside of your Astro project, you'll see the following folders and files:
-
-            ```
-            /
-            ├── public/
-            │   ├── robots.txt
-            │   └── favicon.ico
-            ├── src/
-            │   ├── components/
-            │   │   └── Tour.astro
-            │   └── pages/
-            │       └── index.astro
-            └── package.json
-            ```
-
-            Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
-            Each page is exposed as a route based on its file name.
-
-            There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-            Any static assets, like images, can be placed in the `public/` directory.
-        </Markdown>
-    </section>
-
-     <section>
-        <h2>👀 Want to learn more?</h2>
-        <p>Feel free to check <a href="https://github.com/snowpackjs/astro">our documentation</a> or jump into our <a href="https://astro.build/chat">Discord server</a>.</p>
-    </section>
-    
-</article>
-
-<style>
-    article {
-        padding-top: 2em;
-        line-height: 1.5;
-    }
-    section {
-        margin-top: 2em;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        max-width: 70ch;
-    }
-
-    .banner {
-        text-align: center;
-        font-size: 1.2rem;
-        background: var(--color-light);
-        padding: 1em 1.5em;
-        padding-left: 0.75em;
-        border-radius: 4px;
-    }
-
-    pre,
-    code {
-        font-family: var(--font-mono);
-        background: var(--color-light);
-        border-radius: 4px;
-    }
-
-    pre {
-        padding: 1em 1.5em;
-    }
-
-    .tree {
-        line-height: 1.2;
-    }
-
-    code:not(.tree) {
-        padding: 0.125em;
-        margin: 0 -0.125em;
-    }
-</style>
+<header id="homeHero" class="block w-full 2xl:h-4/5 bg-gradient-to-r from-black to-blue md:pt-10 pb-24 2xl:-pb-32 md:max-h-3/4 lg:max-h-2/3">
+   <div class="container">
+      <div class="homeHero-wrapper w-full md:flex">
+        <!-- Header -->
+        <div class="heroRight block p-4 lg:p-8 w-full md:w-1/2 xl:3/5">
+          <span class="overtitle">
+            Coaching sportif privé à Bordeaux ou en visio
+          </span>
+          <h1 class="homeHero-title italic font-extrabold pt-2 pb-10 text-lighter-pink leading-tight text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+             Faites le plein d'énergie (force, motivation)
+          </h1>
+          <span class="heroText text-white font-medium text-lg md:text-xl">
+            Retrouvez la forme, dessiner vos muscles, votre ligne et restez motivé.e, grâce à un programme sur-mesure et un suivi personnalisé.
+          </span>
+            <div class="cta max-w-xs md:flex md:flex-col space-y-6 py-6 md:mt-10">
+                <button class="btn btn-primary">
+                  Je veux être coaché-e
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                </button>
+                <button class="btn btn-secondary">
+                  <a href="/#services" class="flex">
+                    Visiter
+                    <img src={arrowdown} alt="" class="ml-3">
+                  </a>
+                </button> 
+              </div>
+        </div>
+        <div class="heroLeft p-4 md:p6 lg:p-8 md:w-1/2 xl:h-2/5">
+            <img src={pose_du_coach} class="h-96 w-full block rounded-lg object-cover object-center " />
+              <div class="relative rounded-b-lg rounded-t-none bottom-4 xl:-inset-8 quote bg-black xl:rounded-lg p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-9">
+                <svg class="w-10 h-10 text-pink fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+                  <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
+                </svg>
+                 <blockquote class="w-full text-white">Si tu prends le temps, que tu es motivé.e, je te promets un résultat sur ton bien-être, sur ta posture, sur ton ressenti dans ton corps, si on travaille autant chacun.e.</blockquote>
+              </div>
+        </div>
+                
+      </div>
+   </div>
+</header>
