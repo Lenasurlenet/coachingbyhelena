@@ -1,4 +1,10 @@
 /* src/styles/global.css */
 @tailwind base;
+
+h1 {
+  @apply text-5xl font-extrabold text-indigo-500
+}
+
+
 @tailwind components;
 @tailwind utilities;
