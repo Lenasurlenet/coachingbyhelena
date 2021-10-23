@@ -19,6 +19,18 @@ h1 {
 
 @tailwind components;
 
+.undertitle {
+  @apply font-medium text-white text-base md:text-lg xl:text-xl;
+}
+
+.hero__text {
+  @apply text-white font-medium text-lg md:text-xl lg:text-2xl;
+}
+
+.overtitle {
+  @apply font-medium white text-lg md:text-xl;
+}
+
 .btn {
   @apply rounded-lg px-4 py-3
        bg-gray text-base md:text-lg font-medium normal-case text-white hover:bg-gray-dark duration-300 hover:-translate-y-0.5 transform transition border flex justify-center items-center focus:outline-none focus:ring;
