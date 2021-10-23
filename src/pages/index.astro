@@ -1,12 +1,19 @@
 ---
 // Images and icons
 
-import arrowdown from '../assets/icons/arrowdown.svg';
 import pose_du_coach from '../assets/images/pose_du_coach.jpg';
+import renforcement_musculaire from '../assets/images/renforcement_musculaire.jpg';
 
+
+import arrowdown from '../assets/icons/arrowdown.svg';
 import monitor from '../assets/icons/monitor.svg';
 import activity from '../assets/icons/activity.svg';
 import chart from '../assets/icons/chart.svg';
+
+import dumbell from '../assets/icons/dumbell.svg';
+import scale from '../assets/icons/scale.svg';
+import arrowright from '../assets/icons/arrowright.svg';
+import battery from '../assets/icons/battery.svg';
 
 // Component Imports
 
@@ -80,7 +87,7 @@ let title = 'My Astro Site';
         </header>
 
         <!-- offer -->
-         <div id="sellinPoints">
+         <div id="sellinPoints" class="pb-10">
            <div class="container">
               <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
                 
@@ -119,6 +126,93 @@ let title = 'My Astro Site';
         <!-- Quote -->
 
         <!-- Coaching preview -->
+        <section id="coaching" class="coaching bg-gradient-to-r from-blue to-black">
+          <div class="container">
+            <div class="headline">
+              <h2 class="text-white">Entraînements sur-mesures</h2>
+              <p class="undertitle text-white">
+                Déterminons votre objectif et un parcours d'accompagnement.
+              </p>
+            </div>
+            <div class="coaching__content w-full block py-16 lg:flex justify-stretch">
+              <div class="coaching__images mt-10 lg:-mx-4 lg:mt-0 lg:w-2/3 xl:w-3/5">
+                  <div class="relative space-y-4">
+                      <div class="flex items-end justify-start space-x-4">
+                          <img class="rounded-lg shadow-lg w-40 md:w-72 lg:w-56 xl:w-72" src="https://images.pexels.com/photos/5262963/pexels-photo-5262963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="1"/>
+                          <img class="rounded-lg shadow-lg w-36 sm:w-48 md:w-72 lg:w-56"  src="https://images.pexels.com/photos/6740753/pexels-photo-6740753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="2"/>
+                      </div>
+                      <div class="flex items-start justify-center space-x-4">
+                          <img class="rounded-lg shadow-lg w-32 md:w-56" src="https://images.unsplash.com/photo-1591258370814-01609b341790?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" alt="3"/>
+                          <img class="rounded-lg shadow-lg w-40 md:w-72 lg:w-56 xl:w-64" src={renforcement_musculaire} alt="4"/>
+                      </div>
+                  </div>
+              </div>
+              <div class="coachingFeatures text-white mt-6 lg:w-2/5">
+                <ul class="mt-10">
+                    <li>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white">
+                                   <img src={dumbell} alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-white">
+                                  Renforcement musculaire
+                                </h3>
+                                <p class="text-white mt-2">
+                                  Pour gagner en force et en énergie.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-10">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black">
+                                  <img src={scale} alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-white">
+                                  Perte de poids
+                                </h3>
+                                <p class="text-white mt-2">
+                                  Pour dessiner votre silhouette et atteindre votre objectif de poids.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-10">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black">
+                                  <img src={battery} alt="">   
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-white">
+                                  Sport santé senior
+                                </h3>
+                                <p class="text-white mt-2">
+                                  Prendre soin de son corps en améliorer sa qualité de vie. en gardant un corps fonctionnel et tonique.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="relative w-full mt-16">
+                  <a href="/coaching/#coaching" class="absolute right-5 flex flex-end items-center text-font-medium text-base md:text-lg xl:text-xl text-base-pink hover:text-lighter-pink active:text-darker-pink transition transform  " >
+                    Tous les programmes
+                    <img src={arrowright} alt="" class="ml-3">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
 
         <!-- CTA -->
 

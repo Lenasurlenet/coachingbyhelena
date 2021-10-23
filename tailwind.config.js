@@ -20,7 +20,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      Roboto: "'Roboto', sans-serif"
+      Josefin: "'Josefin', sans-serif"
     },
     container: {
       center: true,
