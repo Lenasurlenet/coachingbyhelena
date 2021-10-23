@@ -1,10 +1,38 @@
 /* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500;1,600;1,700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 
+section {
+  @apply py-6 md:py-8 lg:py-10 xl:py-12;
+}
+
+container {
+  @apply mx-0 min-w-full px-8 md:px-16 lg:px-24 xl:px-32;
+}
+
+
 h1 {
-  @apply text-5xl font-extrabold text-indigo-500
+  @apply text-5xl font-extrabold text-blue;
 }
 
 
 @tailwind components;
+
+.btn {
+  @apply rounded-lg px-4 py-3
+       bg-gray text-base md:text-lg font-medium normal-case text-white hover:bg-gray-dark duration-300 hover:-translate-y-0.5 transform transition border flex justify-center items-center focus:outline-none focus:ring;
+}
+
+.btn-primary {
+  @apply bg-blue text-white hover:bg-blue-dark
+         focus:ring-blue active:bg-blue hover:border-white;
+}
+
+.btn-secondary {
+   @apply bg-white border-blue text-blue hover:bg-blue-dark hover:text-white;
+}
+
+
+
 @tailwind utilities;
