@@ -4,6 +4,10 @@
 import arrowdown from '../assets/icons/arrowdown.svg';
 import pose_du_coach from '../assets/images/pose_du_coach.jpg';
 
+import monitor from '../assets/icons/monitor.svg';
+import activity from '../assets/icons/activity.svg';
+import chart from '../assets/icons/chart.svg';
+
 // Component Imports
 
 // You can import components from any supported Framework here!
@@ -32,7 +36,7 @@ let title = 'My Astro Site';
        
         <!-- Header -->
 
-        <header id="homeHero" class="block w-full h-screen 2xl:h-4/5 bg-gradient-to-r from-black to-blue md:pt-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-32 md:max-h-3/4 lg:max-h-2/3">
+        <header id="homeHero" class="block w-full 2xl:h-4/5 bg-gradient-to-r from-black to-blue md:pt-10 pb-24 2xl:-pb-32 md:max-h-3/4 lg:max-h-2/3">
            <div class="container">
               <div class="homeHero-wrapper w-full md:flex">
                 <!-- Header -->
@@ -76,10 +80,43 @@ let title = 'My Astro Site';
         </header>
 
         <!-- offer -->
+         <div id="sellinPoints">
+           <div class="container">
+              <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
+                
+                <div class="sellingPoint-card">
+                      <img src={activity} alt="icon activity">
+                      <h4>
+                        Evaluation
+                      </h4>
+                      <p class="text-md text-white  py-4">
+                       Test de condition physique. <br> Déterminons votre objectif.
+                      </p>
+                </div>
 
+                <div class="sellingPoint-card">
+                      <img src={chart} alt="icon activity">
+                      <h4>
+                        Suivi personnalisé
+                      </h4>
+                      <p class="text-md text-white  py-4">
+                        Vos progrès sont quantifiés <br> Vos entrainements évolutifs.
+                      </p>
+                  </div>
+                  <div class="sellingPoint-card">
+                      <img src={monitor} alt="icon screen">
+                      <h4>
+                        Domicile, extérieur, visio..
+                      </h4>
+                      <p class="text-md text-white py-4">
+                        Gagnez du temps et du confort <br> Choisissez où a lieu votre séance.
+                      </p>
+                  </div>
+              </div>
+           </div>
+         </div>
 
         <!-- Quote -->
-
 
         <!-- Coaching preview -->
 
