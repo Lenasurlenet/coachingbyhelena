@@ -29,20 +29,22 @@ let title = 'Coaching by Helena | Helena';
 
    <BaseLayout>
    
-    <section class="hero__helena relative bg-black h-screen">
-      <div class="absolute inset-0 w-full">
-        <img class="h-full w-full block object-cover object-center " src={pose_du_coach} />
-      </div>
-       <div class="overlay absolute inset-0 h-full w-full bg-black opacity-25">
-      </div>
-       <div class="container lg:flex md:space-x-2">
-        <div class="hero__content absolute block p-5 bottom-24 lg:px-8">
+    <section id="heroCoaching" class="hero block w-full bg-gradient-to-r from-black to-blue md:pt-10 md:max-h-3/4 lg:max-h-2/3">  
+      <div class="container md:flex">
+        <div class="right md:w-1/2 xl:h-2/5 fadeIn">
+          <img src={pose_du_coach} class="relative h-96 w-full block rounded-lg object-cover object-center " />
+        </div>
+        <div class="hero__content block p-4 lg:px-8 md:w-1/2 xl:3/5">
           <div class="max-width-prose py-4">
-            <span class="overtitle font-medium text-white pb-6 text-sm md:text-base lg:text-lg xl:text-xl">
-              Coach sportif diplomée d'Etat.
-            </span>
-            <h1>Helena D'AUBER</h1>
-            <p class="hero__text">Passionnée par le sport et la nutrition, j'en ai fait mon métier.</p>
+            <p class="overtitle">
+               Coach sportif diplomée d'Etat. 
+            </p>
+            <h1>
+              Helena D'AUBER
+            </h1>
+            <p class="undertitle">
+              Passionnée par le sport et la nutrition, j'en ai fait mon métier.
+            </p>
           </div>
         </div>
       </div>
