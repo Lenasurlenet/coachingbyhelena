@@ -13,7 +13,7 @@ section {
 
 
 h1 {
-  @apply text-5xl font-extrabold text-white;
+  @apply font-Josefin italic font-semibold pt-2 pb-10 text-white tracking-normal leading-tight text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
 }
 
 h2 {
