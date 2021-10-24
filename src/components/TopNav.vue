@@ -1,5 +1,5 @@
 <template>
-  <section id="navigation" class="bg-gradient-to-r from-black to-darker-blue">
+  <div id="TopNav" class="bg-gradient-to-r from-black to-blue">
     <div class="px-4 py-4 mx-auto lg:py-6 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <nav class="relative text-lg flex items-center justify-center lg:space-x-16 fadeIn">
         <ul class="flex items-baseline">
@@ -15,11 +15,10 @@
         </a>
         <ul class="flex items-center space-x-8 md:flex">
           <li><a href="/helena" aria-label="helena" title="Helena" class="text-sm sm:text-base md:text-lg font-medium tracking-wide text-white transition-colors duration-200 hover:text-base-pink active:text-darker-pink">Helena</a></li>
-        
         </ul>
       </nav>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -27,7 +26,3 @@
     
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

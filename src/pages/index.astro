@@ -1,4 +1,9 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CommonHead from "../components/CommonHead.astro";
+
+
+
 // Images and icons
 
 import renforcement_musculaire from '../assets/images/renforcement_musculaire.jpg';
@@ -15,13 +20,11 @@ import scale from '../assets/icons/scale.svg';
 import battery from '../assets/icons/battery.svg';
 
 // Component Imports
-import CommonHead from '../components/CommonHead.astro';
 
 import Header from "../components/Header.astro";
 import Testimonials from "../components/Testimonials.astro";
 
 // You can import components from any supported Framework here!
-import TopNav from "../components/TopNav.vue";
 
 
 // Component Script:
@@ -31,56 +34,50 @@ import TopNav from "../components/TopNav.vue";
 // All variables are available to use in the HTML template below.
 let title = 'My Astro Site';
 
-
 ---
-<html lang="en">
-<head>
-    <CommonHead />
-</head>
-<body>
-    <website id="website" class="w-screen h-full grid grid-cols-1 content-center">
-       
-        <!-- Header -->
-        <TopNav />
-        <Header />
+    <BaseLayout title="coaching by Helena" >
+    
+      <!-- Header -->
+      <Header />
 
-        <!-- offer -->
-         <div id="sellinPoints" class="pb-10">
-           <div class="container">
-              <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
+      <!-- offer -->
+       <div id="sellinPoints" class="pb-10">
+         <div class="container">
+            <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
                 
-                <div class="sellingPoint-card">
-                      <img src={activity} alt="icon activity">
-                      <h4>
-                        Evaluation
-                      </h4>
-                      <p class="text-md text-white  py-4">
-                       Test de condition physique. <br> Déterminons votre objectif.
-                      </p>
-                </div>
-
-                <div class="sellingPoint-card">
-                      <img src={chart} alt="icon activity">
-                      <h4>
-                        Suivi personnalisé
-                      </h4>
-                      <p class="text-md text-white  py-4">
-                        Vos progrès sont quantifiés <br> Vos entrainements évolutifs.
-                      </p>
-                  </div>
-                  <div class="sellingPoint-card">
-                      <img src={monitor} alt="icon screen">
-                      <h4>
-                        Domicile, extérieur, visio..
-                      </h4>
-                      <p class="text-md text-white py-4">
-                        Gagnez du temps et du confort <br> Choisissez où a lieu votre séance.
-                      </p>
-                  </div>
+              <div class="sellingPoint-card">
+                    <img src={activity} alt="icon activity">
+                    <h4>
+                      Evaluation
+                    </h4>
+                    <p class="text-md text-white  py-4">
+                     Test de condition physique. <br> Déterminons votre objectif.
+                    </p>
               </div>
-           </div>
-         </div>
 
+              <div class="sellingPoint-card">
+                    <img src={chart} alt="icon activity">
+                    <h4>
+                      Suivi personnalisé
+                    </h4>
+                    <p class="text-md text-white  py-4">
+                      Vos progrès sont quantifiés <br> Vos entrainements évolutifs.
+                    </p>
+                </div>
+                <div class="sellingPoint-card">
+                    <img src={monitor} alt="icon screen">
+                    <h4>
+                      Domicile, extérieur, visio..
+                    </h4>
+                    <p class="text-md text-white py-4">
+                      Gagnez du temps et du confort <br> Choisissez où a lieu votre séance.
+                    </p>
+                </div>
+            </div>
+         </div>
+       </div>
+
+      <main id="homeMain">
         <!-- Quote -->
 
         <!-- Coaching preview -->
@@ -174,8 +171,8 @@ let title = 'My Astro Site';
 
         <!-- short testimonial -->
         <Testimonials/>
-        <!-- CTA -->
 
+        <!-- CTA -->
         <section id="coaching__CTA" class="bg-white md:px-0 py-8 md:py-12 lg:-space-y-16">
           <div class="container">
             <div class="flex flex-wrap items-center sm:-mx-3">
@@ -208,8 +205,8 @@ let title = 'My Astro Site';
           </div>
         </section>
 
-        <!-- Footer -->
-
-    </website>
-</body>
-</html>
+      </main>
+      <!-- Footer -->
+    
+    
+    </BaseLayout>

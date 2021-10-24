@@ -1,0 +1,24 @@
+---
+import CommonHead from "../components/CommonHead.astro";
+import TopNav from '../components/TopNav.vue';
+let title = 'Coaching by Helena';
+---
+<html>
+  <head>
+    <CommonHead />
+  </head>
+  <body>
+    <website id="website" class="grid content-center">
+      <!-- Adds a navigation bar to every page. -->
+      <TopNav />
+
+      <!-- slot: your page content will be injected here. -->
+      <slot />
+     
+      <!-- Footer -->
+
+    </website>
+    
+  </body>
+
+</html>
