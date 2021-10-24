@@ -1,5 +1,37 @@
+---
+import CommonHead from '../components/CommonHead.astro';
+
+
+import helena_cliente_gainage from '../assets/images/helena_cliente_gainage.jpg'
+
+
+---
+
 <html lang="en">
   <head>
-    
+    <CommonHead />
   </head>
 </html>
+
+<div class="">
+
+  <section id="heroCoaching" class="hero block w-full bg-gradient-to-r from-black to-blue md:pt-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-32 md:max-h-3/4 lg:max-h-2/3">  
+    <div class="container md:flex">
+      <div class="hero__content block p-4 lg:px-8 md:w-1/2 xl:3/5">
+        <div class="max-width-prose py-4">
+          <h1 class="font-extrabold pt-2 pb-10 text-lighter-pink leading-tight text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl fadeIn">
+            Accompagnement expert à votre service
+          </h1>
+          <p class="overtitle text-white">
+            Perte de poids, renforcement musculaire, sport santé...
+          </p>
+        </div>
+      </div>
+      <div class="right pb-32 md:w-1/2 xl:h-2/5 fadeIn">
+        <img src={helena_cliente_gainage} class="relative h-96 w-full block rounded-lg object-cover object-center " />
+      </div>
+    </div>
+  </section>
+
+
+</div>
