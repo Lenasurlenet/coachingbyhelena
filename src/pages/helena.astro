@@ -1,0 +1,51 @@
+---
+
+// Component Imports
+import CommonHead from '../components/CommonHead.astro';
+
+// Images
+import pose_du_coach from '../assets/images/pose_du_coach.jpg';
+import helena_coach from '../assets/images/helena_coach.jpg';
+import profil_kamar from '../assets/images/profil_kamar.jpg';
+import profil_lena from '../assets/images/profil_lena.png';
+import profil_celine from '../assets/images/profil_celine.jpg';
+
+
+
+// You can import components from any supported Framework here!
+
+let title = 'Coaching by Helena | Helena';
+
+---
+
+<html lang="en">
+<head>
+  <CommonHead />
+</head>
+
+   <section class="hero__helena relative bg-black h-screen">
+    <div class="absolute inset-0 w-full">
+      <img class="h-full w-full block object-cover object-center " src={pose_du_coach} />
+    </div>
+     <div class="overlay absolute inset-0 h-full w-full bg-black opacity-25">
+    </div>
+     <div class="container lg:flex md:space-x-2">
+      <div class="hero__content absolute block p-5 bottom-24 lg:px-8">
+        <div class="max-width-prose py-4">
+          <span class="overtitle font-medium text-white pb-6 text-sm md:text-base lg:text-lg xl:text-xl">
+            Coach sportif diplomée d'Etat.
+          </span>
+          <h1>Helena D'AUBER</h1>
+          <p class="hero__text">Passionnée par le sport et la nutrition, j'en ai fait mon métier.</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+
+
+
+
+
+
+</html>
