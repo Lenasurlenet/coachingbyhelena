@@ -25,7 +25,7 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
 
 <div class="">
 
-  <section id="heroCoaching" class="hero block w-full bg-gradient-to-r from-black to-blue md:pt-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-32 md:max-h-3/4 lg:max-h-2/3">  
+  <section id="heroCoaching" class="hero block w-full bg-gradient-to-r from-black to-blue md:pt-10 md:max-h-3/4 lg:max-h-2/3">  
     <div class="container md:flex">
       <div class="hero__content block p-4 lg:px-8 md:w-1/2 xl:3/5">
         <div class="max-width-prose py-4">
@@ -37,7 +37,7 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
           </p>
         </div>
       </div>
-      <div class="right pb-32 md:w-1/2 xl:h-2/5 fadeIn">
+      <div class="right md:w-1/2 xl:h-2/5 fadeIn">
         <img src={helena_cliente_gainage} class="relative h-96 w-full block rounded-lg object-cover object-center " />
       </div>
     </div>
@@ -172,6 +172,28 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
        <div class="overlay absolute inset-0 h-full w-full bg-black opacity-25">
       </div>
    
+    </section>
+
+    <section class="CTA py-8 leading-7 text-black bg-white sm:py-12 md:py-16 lg:py-24">
+        <div class="container">
+            <div class="flex flex-col items-start leading-7 text-black border-0 border-gray lg:items-center lg:flex-row">
+                <div class="box-border flex-1 border-solid sm:text-left">
+                    <h2 class="text-base-blue">
+                      Vous 2.0
+                    </h2>
+                    <p class="undertitle text-darker-gray">
+                        Faites le premier pas. Décidez, aujourd’hui, de prendre votre forme en main.
+                    </p>
+                </div>
+                <a href="#services" class="inline-flex items-center justify-center max-w-xs px-5 py-4 mt-6 ml-0 font-medium text-base md:text-lg leading-none text-white no-underline bg-base-blue border border-base-blue border-solid rounded-full cursor-pointer md:w-auto lg:mt-0 hover:bg-lighter-blue hover:text-white focus-within:bg-darker-blue focus-within:border-darker-blue active:bg-darker-blue focus-within:text-white sm:text-lg lg:ml-6 md:text-xl">
+                    Booker une session
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
   </main>
 
