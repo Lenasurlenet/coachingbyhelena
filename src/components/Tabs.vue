@@ -26,83 +26,87 @@
           <!-- Tab Solo -->
           <div class="solo block w-full h-full"
             v-show="selectedTabs === 'Solo'"
-            
             >
             <div class="card_priceWrapper w-full">
-              <div class="presentiel mx-0 w-full md:flex md:flex-wrap md:justify-center md:items-center pt-8 sm:space-x-12">
+              <div class="flex-1 mx-auto pt-8">
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
-                  <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                <ul class="presentiel grid grid-cols-1 gap-4 place-items-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-6" >
+                  <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                      <!-- card -->
+                      <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
-                    <h4 class="text-pink pb-0">Présentiel</h4>
-                    <!-- card overline -->
-                    <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
-                    </div>
-                    <!-- card title -->
-                    <p class="text-[40px] text-white font-extrabold">
-                      60€ <span class="text-base font-normal" >séance</span>
-                    </p>
+                        <h4 class="text-pink pb-0">Présentiel</h4>
+                        <!-- card overline -->
+                        <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
+                        </div>
+                        <!-- card title -->
+                        <p class="text-[40px] text-white font-extrabold">
+                          60€ <span class="text-base font-normal" >séance</span>
+                        </p>
 
-                    <!-- card description -->
-                    <div class="cardDescription">
-                      <div class="cardText">
-                        <p class="text-xl font-normal text-white">cours à la carte <br> sans engagement</p>
-                      </div>
-                    </div> <!-- End card description -->
-                  </article> <!-- End card -->
-                </div> <!-- End card background  -->
-                <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
-                  <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                        <!-- card description -->
+                        <div class="cardDescription">
+                          <div class="cardText">
+                            <p class="text-xl font-normal text-white">cours à la carte <br> sans engagement</p>
+                          </div>
+                        </div> <!-- End card description -->
+                      </article> <!-- End card -->
+                  </li> <!-- End card background  -->
 
-                    <h4 class="text-pink pb-0">Présentiel</h4>
-                    <!-- card overline -->
-                    <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
-                    </div>
-                    <!-- card title -->
-                    <p class="text-[40px] text-white font-extrabold">
-                      400€ <span class="text-base font-normal">mois</span>
-                    </p>
+                    <!-- card background  -->
+                    <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                      <!-- card -->
+                      <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
-                    <!-- card description -->
-                    <div class="cardDescription">
-                      <div class="cardText">
-                        <p class="text-xl font-normal text-white">2 séances/semaine <br> sans engagement</p>
-                      </div>
-                    </div> <!-- End card description -->
-                  </article> <!-- End card -->
-                </div> <!-- End card background  -->
-                <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
-                  <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                        <h4 class="text-pink pb-0">Présentiel</h4>
+                        <!-- card overline -->
+                        <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
+                        </div>
+                        <!-- card title -->
+                        <p class="text-[40px] text-white font-extrabold">
+                          400€ <span class="text-base font-normal">mois</span>
+                        </p>
 
-                    <h4 class="text-pink pb-0">Présentiel</h4>
-                    <!-- card overline -->
-                    <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
-                    </div>
-                    <!-- card title -->
-                    <p class="text-[40px] text-white font-extrabold">
-                      480€ <span class="text-base font-normal">mois</span>
-                    </p>
+                        <!-- card description -->
+                        <div class="cardDescription">
+                          <div class="cardText">
+                            <p class="text-xl font-normal text-white">2 séances/semaine <br> sans engagement</p>
+                          </div>
+                        </div> <!-- End card description -->
+                      </article> <!-- End card -->
+                    </li> <!-- End card background  -->
 
-                    <!-- card description -->
-                    <div class="cardDescription">
-                      <div class="cardText">
-                        <p class="text-xl font-normal text-white">3 séances/semaine <br> sans engagement</p>
-                      </div>
-                    </div> <!-- End card description -->
-                  </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                    <!-- card background  -->
+                    <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                      <!-- card -->
+                      <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
+
+                        <h4 class="text-pink pb-0">Présentiel</h4>
+                        <!-- card overline -->
+                        <div class="cardTitle__overline bg-pink h-0.5 w-28 mb-4">
+                        </div>
+                        <!-- card title -->
+                        <p class="text-[40px] text-white font-extrabold">
+                          480€ <span class="text-base font-normal">mois</span>
+                        </p>
+
+                        <!-- card description -->
+                        <div class="cardDescription">
+                          <div class="cardText">
+                            <p class="text-xl font-normal text-white">3 séances/semaine <br> sans engagement</p>
+                          </div>
+                        </div> <!-- End card description -->
+                      </article> <!-- End card -->
+                    </li> <!-- End card background  -->
+
+                  </ul>
               </div>
 
-              <div class="visio mx-0 w-full md:flex md:flex-wrap md:justify-center md:items-center pt-8 sm:space-x-12">
+              <ul class="visio grid grid-cols-1 gap-4 place-items-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -120,11 +124,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -142,11 +146,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -164,19 +168,19 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
-              </div>
+                </li> <!-- End card background  -->
+              </ul>
             </div> <!-- End card_priceWrapper -->
           </div>
 
           <!-- Tab Duo -->
         <div class="duo block" v-show="selectedTabs === 'Duo'" >
           <div class="card_priceWrapper w-full">
-            <div class="presentiel mx-0 w-full md:flex md:flex-wrap md:justify-center md:items-center pt-8 sm:space-x-12">
+            <ul class="presentiel grid grid-cols-1 gap-4 place-items-center sm:grid-cols-2 md:grid-cols-3 md:gap-6 lg:gap-8">
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Présentiel</h4>
                     <!-- card overline -->
@@ -194,11 +198,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Présentiel</h4>
                     <!-- card overline -->
@@ -216,11 +220,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Présentiel</h4>
                     <!-- card overline -->
@@ -238,14 +242,14 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
-              </div>
+                </li> <!-- End card background  -->
+            </ul>
 
-              <div class="visio mx-0 w-full md:flex md:flex-wrap md:justify-center md:items-center pt-8 sm:space-x-12">
+            <ul class="visio grid grid-cols-1 gap-4 place-items-center sm:grid-cols-2 md:grid-cols-3 md:gap-6 lg:gap-8">
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -263,11 +267,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -285,11 +289,11 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
+                </li> <!-- End card background  -->
                 <!-- card background  -->
-                <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+                <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                   <!-- card -->
-                  <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                  <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                     <h4 class="text-pink pb-0">Visio</h4>
                     <!-- card overline -->
@@ -307,19 +311,19 @@
                       </div>
                     </div> <!-- End card description -->
                   </article> <!-- End card -->
-                </div> <!-- End card background  -->
-              </div>
-            </div> <!-- End card_priceWrapper -->
+                </li> <!-- End card background  -->
+            </ul>
+          </div> <!-- End card_priceWrapper -->
         </div> 
 
         <!-- Tab Groupe -->
         <div class="group block" v-show="selectedTabs === 'Groupe'" >
           <div class="card_priceWrapper w-full">
-            <div class="presentiel mx-0 w-full md:flex md:flex-wrap md:justify-center md:items-center pt-8 sm:space-x-12">
+            <ul class="presentiel grid grid-cols-1 gap-4 place-items-center sm:grid-cols-2 md:grid-cols-3 md:gap-6 lg:gap-8">
               <!-- card background  -->
-              <div class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
+              <li class="cardBg relative bg-pink h-72 w-60 rounded-lg mb-10">
                 <!-- card -->
-                <article class="card absolute bg-black h-72 w-60 text-gray-800 rounded-lg p-8 space-y-4 right-4 bottom-4">
+                <article class="card absolute bg-black h-72 w-60 rounded-lg p-8 space-y-4 right-4 -top-4">
 
                   <h4 class="text-pink pb-0">Présentiel</h4>
                   <!-- card overline -->
@@ -337,10 +341,8 @@
                     </div>
                   </div> <!-- End card description -->
                 </article> <!-- End card -->
-              </div> <!-- End card background  -->
-            </div>
-
-            
+              </li> <!-- End card background  -->
+            </ul>
           </div> <!-- End card_priceWrapper -->
           
         </div> <!-- End group block -->
