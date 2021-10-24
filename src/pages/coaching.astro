@@ -1,5 +1,6 @@
 ---
 import CommonHead from '../components/CommonHead.astro';
+import Tabs from '../components/Tabs.vue';
 
 
 // Images
@@ -12,8 +13,6 @@ import prise_de_masse from '../assets/images/prise_de_masse.jpg';
 import team from '../assets/images/team.jpg';
 import duo from '../assets/images/duo.jpg';
 import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
-
-
 
 ---
 
@@ -43,7 +42,7 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
     </div>
   </section>
 
-  <main id="heroCoaching">
+  <main id="main-heroCoaching">
   
     <section id="coaching">
       <div class="container">
@@ -173,6 +172,10 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
       </div>
    
     </section>
+
+    <!-- pricesTabs -->
+
+    <Tabs />
 
     <section class="CTA py-8 leading-7 text-black bg-white sm:py-12 md:py-16 lg:py-24">
         <div class="container">
