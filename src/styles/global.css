@@ -28,6 +28,7 @@ h4 {
 @apply font-Josefin font-semibold  text-lg md:text-xl py-4;
 }
 
+
 @tailwind components;
 
 .undertitle {
@@ -60,6 +61,13 @@ h4 {
   @apply w-full md:w-72 md:h-48 flex flex-col justify-center items-center text-white bg-black border rounded-lg px-4 py-6 h-56;
 }
 
+.card_testimonial {
+  @apply bg-black w-full border-blue rounded-lg md:w-3/4 xl:w-2/3 p-4 md:p-6 shadow-lg mx-auto;
+}
+
+.icon {
+  @apply text-pink w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12;
+}
 
 
 @tailwind utilities;
