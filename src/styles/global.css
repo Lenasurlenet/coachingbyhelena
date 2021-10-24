@@ -61,7 +61,7 @@ h4 {
 }
 
 .sellingPoint-card {
-  @apply w-full md:w-72 md:h-48 flex flex-col justify-center items-center text-white bg-black border rounded-lg px-4 py-6 h-56;
+  @apply w-full px-4 py-6 md:w-72 md:h-60 flex flex-col justify-center items-center text-white bg-black border rounded-lg;
 }
 
 .card {
