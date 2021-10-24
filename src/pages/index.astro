@@ -17,11 +17,11 @@ import battery from '../assets/icons/battery.svg';
 // Component Imports
 import CommonHead from '../components/CommonHead.astro';
 
-
 import Header from "../components/Header.astro";
 import Testimonials from "../components/Testimonials.astro";
 
 // You can import components from any supported Framework here!
+import TopNav from "../components/TopNav.vue";
 
 
 // Component Script:
@@ -41,7 +41,7 @@ let title = 'My Astro Site';
     <website id="website" class="w-screen h-full grid grid-cols-1 content-center">
        
         <!-- Header -->
-
+        <TopNav />
         <Header />
 
         <!-- offer -->
