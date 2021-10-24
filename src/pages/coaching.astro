@@ -2,7 +2,17 @@
 import CommonHead from '../components/CommonHead.astro';
 
 
+// Images
+import helena from '../assets/images/helena.jpg';
 import helena_cliente_gainage from '../assets/images/helena_cliente_gainage.jpg'
+import renforcement_musculaire from '../assets/images/renforcement_musculaire.jpg';
+import perte_de_poids from '../assets/images/perte_de_poids.jpg';
+import sport_sante_senior from '../assets/images/sport_sante_senior.jpg';
+import prise_de_masse from '../assets/images/prise_de_masse.jpg';
+import team from '../assets/images/team.jpg';
+import duo from '../assets/images/duo.jpg';
+import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
+
 
 
 ---
@@ -32,6 +42,119 @@ import helena_cliente_gainage from '../assets/images/helena_cliente_gainage.jpg'
       </div>
     </div>
   </section>
+
+  <main id="heroCoaching">
+  
+    <section id="coaching">
+      <div class="container">
+        <div class="right py-8 max-w-prose">
+           <div class="blockTitle">
+            <h2>
+              Les coachings
+             </h2>
+             <p class="undertitle text-black">Tous les cours solo et duo, en présentiel, incluent un bilan physique.</p>
+           </div>
+        </div>
+        <div class="grid gap-6 row-gap-5 mb-8 sm:row-gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="/" aria-label="View Item">
+            <div class="card_coaching relative overflow-hidden text-white transition duration-200 transform rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              <img class="object-cover w-full h-96" src={perte_de_poids} alt="Femme faisant des fentes" />
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white transition-opacity duration-200">
+                  Perte de poids
+                </p>
+              </div>
+              <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <h4>Perte de poids</h4>
+                <p class="text-white">
+                  Des entrainements conçus spécialement pour vous, pour vous aider à atteindre vos objectifs. <br> Travail au poids du corps, travail cardio-vasculaire et des *conseils nutritionnels. <br>
+                  En route vers votre silhouette idéale!
+                </p>
+              </div>
+            </div>
+            
+          </a>
+          <a href="/" aria-label="View Item">
+            <div class="card_coaching relative overflow-hidden text-white transition duration-200 transform rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              <img class="object-cover w-full h-96" src={renforcement_musculaire} alt="Femme faisant des fentes" />
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white transition-opacity duration-200">
+                  Renforcement musculaire
+                </p>
+              </div>
+              <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <h4>Renforcement musculaire</h4>
+                <p class="text-white">
+                  Retrouvez tonus et vivacité!<br>
+                  Le renforcement musculaire se travaille (essentiellement) avec le poids du corps. Il a des effets sur la posture et également sur votre silhouette en vous permettant de raffermir, entre autres, votre sangle abdominale, vos fessiers et vos cuisses.
+                </p>
+              </div>
+            </div>
+            
+          </a>
+          <a href="/" aria-label="View Item">
+            <div class="card_coaching relative overflow-hidden text-white transition duration-200 transform rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              <img class="object-cover w-full h-96" src={prise_de_masse} alt="Femme faisant des fentes" />
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white transition-opacity duration-200">
+                  Prise de masse
+                </p>
+              </div>
+              <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <h4>Prise de masse</h4>
+                <p class="text-white">
+                  Pour faire évoluer votre physique et vous sentir mieux dans votre corps. <br>
+                  Vous souhaitez prendre du poids, gagner en muscle, être plus sexy avec une musculature mieux défini? Nous travaillerons votre prise de masse avec et sans matériel.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="/" aria-label="View Item">
+            <div class="card_coaching relative overflow-hidden text-white transition duration-200 transform rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              <img class="object-cover w-full h-96" src={sport_sante_senior} alt="Senior faisant des twists russes" />
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white transition-opacity duration-200">
+                  Sport santé sénior
+                </p>
+              </div>
+              <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <h4>Sport Santé Sénior</h4>
+                <p class="text-white">
+                  Pratiquer une activité physique régulière lutte activement contre le vieillissement. <br>
+                  Nous pouvons faire le choix de lutter contre la gravité et vieillir forts et en bonne santé. Ceci est possible avec une alimentation saine, des exercices réguliers, pour gagner en force musculaire, souplesse et stabilité.
+                </p>
+              </div>
+            </div>
+          </a>
+            
+          <a href="/" aria-label="View Item">
+            <div class="card_coaching relative overflow-hidden text-white transition duration-200 transform rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+              <img class="object-cover w-full h-96" src={team} alt="team building" />
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white transition-opacity duration-200">
+                  Sport en entreprise
+                </p>
+              </div>
+              <div class="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <h4>Sport en entreprise</h4>
+                <p class="text-white">
+                  On constate, dans les entreprises qui donnent un temps d’entrainement à leurs employés, différents bénéfices: <br>
+                </p>
+                <ul class="list-disc list-inside text-base md:text-lg">
+                  <li>Hausse de la productivité</li>
+                  <li>Amélioration de la concentration</li>
+                  <li>Gain de motivation</li>
+                  <li>Diminution des arrêts maladie grâce au travail postural.</li>
+                </ul>
+              </div>
+            </div>
+            
+          </a>
+        </div>  
+      </div>
+    </section>
+  </main>
 
 
 </div>
