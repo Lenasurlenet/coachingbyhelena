@@ -69,11 +69,11 @@ h4 {
 }
 
 .card_testimonial {
-  @apply bg-black w-full border-blue rounded-lg md:w-3/4 xl:w-2/3 p-4 md:p-6 shadow-lg mx-auto;
+  @apply bg-black w-full border-blue rounded-lg p-4 md:p-6 shadow-lg mx-auto;
 }
 
 .icon {
-  @apply text-pink w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12;
+  @apply text-pink w-8 h-8 md:h-10 md:w-10 lg:w-12 lg:h-12;
 }
 
 
