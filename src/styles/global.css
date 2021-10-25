@@ -1,6 +1,7 @@
 /* src/styles/global.css */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500;1,600;1,700&family=Roboto:wght@400;700&display=swap');
 
+
 @tailwind base;
 
 section {
@@ -77,4 +78,37 @@ h4 {
 }
 
 
+
 @tailwind utilities;
+
+
+.fadeIn {
+  animation: fadeIn 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
