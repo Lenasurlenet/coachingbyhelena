@@ -81,7 +81,7 @@ h4 {
 
 @tailwind utilities;
 
-
+/*
 .fadeIn {
   animation: fadeIn 1s ease 0s 1 normal forwards;
 }
@@ -112,3 +112,4 @@ h4 {
     transform: translateX(100px);
   }
 }
+*/
