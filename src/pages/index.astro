@@ -86,17 +86,17 @@ let title = 'My Astro Site';
         <!-- Quote -->
 
         <!-- Coaching preview -->
-        <section id="coaching" class="coaching bg-gradient-to-r from-blue to-black">
+        <section id="coachingPreview" class="coaching bg-white">
           <div class="container">
             <div class="headline" data-aos="fade-right">
-              <h2 class="text-white">Entraînements sur-mesures</h2>
-              <p class="undertitle text-white">
+              <h2>Entraînements sur-mesures</h2>
+              <p class="undertitle text-gray-dark">
                 Déterminons votre objectif et un parcours d'accompagnement.
               </p>
             </div>
-            <div class="coaching__content w-full block py-16 lg:flex justify-stretch">
-              <div class="coaching__images mt-10 lg:-mx-4 lg:mt-0 lg:w-2/3 xl:w-3/5" data-aos="fade-righ">
-                  <div class="relative space-y-4">
+            <div class="coaching__content w-full block lg:py-16 lg:flex justify-stretch">
+              <div class="coaching__images mt-10 lg:-mx-4 lg:mt-0 lg:w-2/3 xl:w-3/5">
+                  <div class="relative space-y-4" data-aos="fade-righ">
                       <div class="flex items-end justify-start space-x-4">
                           <img class="rounded-lg shadow-lg w-40 md:w-72 lg:w-56 xl:w-72" src="https://images.pexels.com/photos/5262963/pexels-photo-5262963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="1"/>
                           <img class="rounded-lg shadow-lg w-36 sm:w-48 md:w-72 lg:w-56"  src="https://images.pexels.com/photos/6740753/pexels-photo-6740753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="2"/>
@@ -107,54 +107,54 @@ let title = 'My Astro Site';
                       </div>
                   </div>
               </div>
-              <div class="coachingFeatures text-white mt-6 lg:w-2/5" data-aos="fade-left">
+              <div class="coachingFeatures mt-6 lg:w-2/5" data-aos="fade-left">
                 <ul class="mt-10">
                     <li>
-                        <div class="flex items-center">
+                        <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black text-white">
+                                <div class="flex items-start justify-center h-12 w-12 rounded-md bg-black text-white">
                                    <img src={dumbell} alt="">
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-white">
+                                <h3 class="text-gray-dark">
                                   Renforcement musculaire
                                 </h3>
-                                <p class="text-white mt-2">
+                                <p class="text-gray-dark mt-2">
                                   Pour gagner en force et en énergie.
                                 </p>
                             </div>
                         </div>
                     </li>
                     <li class="mt-10">
-                        <div class="flex items-center">
+                        <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black">
+                                <div class="flex items-start justify-center h-12 w-12 rounded-md bg-black">
                                   <img src={scale} alt="">
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-white">
+                                <h3 class="text-gray-dark">
                                   Perte de poids
                                 </h3>
-                                <p class="text-white mt-2">
+                                <p class="text-gray-dark mt-2">
                                   Pour dessiner votre silhouette et atteindre votre objectif de poids.
                                 </p>
                             </div>
                         </div>
                     </li>
                     <li class="mt-10">
-                        <div class="flex items-center">
+                        <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-black">
+                                <div class="flex items-start justify-center h-12 w-12 rounded-md bg-black">
                                   <img src={battery} alt="">   
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-white">
+                                <h3 class="text-gray-dark">
                                   Sport santé senior
                                 </h3>
-                                <p class="text-white mt-2">
+                                <p class="text-gray-dark mt-2">
                                   Prendre soin de son corps en améliorer sa qualité de vie. en gardant un corps fonctionnel et tonique.
                                 </p>
                             </div>
@@ -181,7 +181,12 @@ let title = 'My Astro Site';
         <section id="coaching__CTA" class="bg-white md:px-0 py-8 md:py-12 lg:-space-y-16">
           <div class="container">
             <div class="flex flex-col-reverse md:flex md:flex-row items-center">
-              <div class="w-full pl-4 md:w-1/2 md:px-3">
+              <div class="w-full pr-4 md:w-1/2" data-aos="fade-right" >
+                <div class="w-full h-auto overflow-hidden rounded-lg shadow-xl pb-8">
+                    <img src={atelier_sport_sante}>
+                  </div>
+              </div>
+              <div class="w-full pl-4 md:w-1/2 md:px-3" data-aos="fade-left">
                 <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
                   <h2>
                     <span class="block xl:inline text-base-blue">Programme personnalisé</span>
@@ -199,11 +204,6 @@ let title = 'My Astro Site';
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="w-full pr-4 md:w-1/2">
-                <div class="w-full h-auto overflow-hidden rounded-lg shadow-xl pb-8">
-                    <img src={atelier_sport_sante}>
-                  </div>
               </div>
             </div>
           </div>
