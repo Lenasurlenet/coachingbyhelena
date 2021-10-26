@@ -5,7 +5,8 @@ html, body {
   box-sizing: border-box;
   margin:0;
   padding:0;
-  width:100%;
+  min-width:100%;
+  min-height:100%;
 }
 
 
@@ -16,7 +17,7 @@ section {
 }
 
 .container {
-  @apply mx-0 w-full h-full  py-0 px-6 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20;
+  @apply mx-0 w-full max-w-full h-full py-0 px-6 lg:px-8 xl:px-10 2xl:px-12;
 }
 
 p {

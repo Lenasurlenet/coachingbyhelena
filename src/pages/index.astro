@@ -2,8 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CommonHead from "../components/CommonHead.astro";
 
-
-
 // Images and icons
 
 import renforcement_musculaire from '../assets/images/renforcement_musculaire.jpg';
@@ -40,7 +38,7 @@ let title = 'My Astro Site';
       <CommonHead />
     </head>
 
-    <BaseLayout title="coaching by Helena" >
+    <BaseLayout title="coaching by Helena">
     
       <!-- Header -->
       <Header />
@@ -82,13 +80,13 @@ let title = 'My Astro Site';
          </div>
        </div>
 
-      <main id="homeMain">
+      <main id="homeMain" class="max-w-full">
         <!-- Quote -->
 
         <!-- Coaching preview -->
         <section id="coachingPreview" class="coaching bg-white">
           <div class="container">
-            <div class="headline" data-aos="fade-right">
+            <div class="blockTitle" data-aos="fade-right">
               <h2>Entraînements sur-mesures</h2>
               <p class="undertitle text-gray-dark">
                 Déterminons votre objectif et un parcours d'accompagnement.
