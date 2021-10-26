@@ -1,0 +1,61 @@
+---
+import arrowleft from '../assets/icons/arrowleft.svg';
+import arrowright from '../assets/icons/arrowright.svg';
+import duo from '../assets/images/duo.jpg';
+import helena from '../assets/images/helena.jpg';
+import sport_sante_senior from '../assets/images/sport_sante_senior.jpg';
+
+---
+
+<carousel class="wrapper w-full max-w-3xl h-[600px]">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="slidesWrapper relative h-full w-full mb-20 grid grid-cols-1 place-items-center">
+    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="song-1">
+      <img src={helena} alt="song" class="w-full h-full object-contain bg-center rounded-lg">
+    </label>
+    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="song-2">
+      <img src={duo} alt="song" class="w-full h-full rounded-lg object-contain bg-center">
+    </label>
+    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="song-3">
+      <img src={sport_sante_senior} alt="song" class="w-full h-full rounded-lg object-contain bg-center">
+    </label>
+  </div>
+</carousel>
+
+<style lang="scss" >
+
+
+  input[type=radio] {
+    display: none;
+  }
+
+  .wrapper {
+    transform-style: preserve-3d;
+  }
+
+
+  #item-1:checked ~ .slidesWrapper #song-3, #item-2:checked ~ .slidesWrapper #song-1, #item-3:checked ~ .slidesWrapper #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+
+  #item-1:checked ~ .slidesWrapper #song-2, #item-2:checked ~ .slidesWrapper #song-3, #item-3:checked ~ .slidesWrapper #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+
+  #item-1:checked ~ .slidesWrapper #song-1, #item-2:checked ~ .slidesWrapper #song-2, #item-3:checked ~ .slidesWrapper #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+  
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+
+</style>

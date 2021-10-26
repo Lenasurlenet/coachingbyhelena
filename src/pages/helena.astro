@@ -2,7 +2,7 @@
 // Component Imports
 import CommonHead from '../components/CommonHead.astro';
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Carousel from '../components/Carousel.astro';
 
 // Images
 import pose_du_coach from '../assets/images/pose_du_coach.jpg';
@@ -215,6 +215,17 @@ let title = 'Coaching by Helena | Helena';
           </div>
         </div>
       </section>
+
+      <!-- photoGallery -->
+      <section id="photoGallery">
+        <div class="container grid grid-cols-1 place-items-center">
+          <div class="blockTitle">
+           <h2>Gallerie photos</h2>
+           <p class="undertitle">Coaching en photos</p>
+          </div>
+          <Carousel />
+        </div>
+      </section>      
 
       <section id="contact" class="bg-black">
         <div class="container">
