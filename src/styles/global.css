@@ -10,14 +10,15 @@ html, body {
 }
 
 
+
 @tailwind base;
 
 section {
-  @apply py-12 lg:py-16;
+  @apply py-12 lg:py-16 max-w-full;
 }
 
 .container {
-  @apply mx-0 w-full max-w-full h-full py-0 px-6 lg:px-8 xl:px-10 2xl:px-12;
+  @apply mx-0 w-full max-w-screen-2xl h-full py-0 px-6 lg:px-8 xl:px-10 2xl:px-12;
 }
 
 p {

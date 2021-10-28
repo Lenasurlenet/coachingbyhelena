@@ -1,21 +1,35 @@
 ---
+
 let title = 'Coaching by Helena';
+let description = "Je vous coach en 1:1, à domicile, sur Bordeaux Métropole, ou à distance via visioconférence. Un programme sur-mesure et un suivi personnalisé vous permettrons d'atteindre vos objectifs.";
+let author = "Helena D'AUBER";
+let keywords = ["Coaching privée", "Bordeaux", "Perte de poids", "Renforcement musculaire"];
 ---
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- favicon -->
 
-    <meta name="description" content="Je vous coach en 1:1, à domicile, sur Bordeaux Métropole, ou à distance via visioconférence. Un programme sur-mesure et un suivi personnalisé vous permettrons d'atteindre vos objectifs.">
-    <meta name="author" content="Helena D'AUBER"> 
-    <meta name="keywords" content="Coaching privée, Bordeaux, Perte de poids, Renforcement musculaire">
+    <meta name="description" content={description}>
+    <meta name="author" content={author}> 
+    <meta name="keywords" content={keywords}>
     <title>{title}</title>
     <!-- Sitemap -->
 
     <!-- Cannonical -->
+
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/global.css')} />
+
+    <!-- Open Graph -->
+      <!-- Facebook -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={'https://coachingbyhelena.com'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+      <!-- Instagram -->
