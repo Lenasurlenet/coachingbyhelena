@@ -1,6 +1,6 @@
 <template>
   <div id="TopNav" class="bg-gradient-to-r from-black to-blue">
-    <div class="topNavWrapper px-4 py-4 mx-auto lg:py-6 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8" data-aos="fade-up">
+    <div class="topNavWrapper px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8" data-aos="fade-up">
       <nav class="relative text-lg flex items-center justify-center lg:space-x-16 fadeIn">
         <ul class="flex items-baseline">
           <li><a href="/coaching" aria-label="Coaching" title="Coaching" class="text-sm sm:text-base md:text-lg font-medium tracking-wide text-white transition-colors duration-200 hover:text-pink-light active:text-pink-dark">Coaching</a></li>
