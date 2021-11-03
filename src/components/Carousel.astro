@@ -4,22 +4,23 @@ import arrowright from '../assets/icons/arrowright.svg';
 import duo from '../assets/images/duo.jpg';
 import helena from '../assets/images/helena.jpg';
 import helena_cliente_squats from '../assets/images/helena_cliente_squats.jpg';
+import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
 
 ---
 
-<carousel class="wrapper w-full max-w-3xl h-[500px] overflow-x-hidden">
+<carousel class="wrapper w-full max-w-3xl h-48 md:h-96 overflow-x-hidden">
     <input type="radio" name="slider" id="item-1" checked>
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
-  <div class="slidesWrapper relative h-full w-full mb-20 grid grid-cols-1 place-items-center">
-    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="song-1">
-      <img src={helena} alt="song" class="w-full h-full object-contain bg-center rounded-lg">
+  <div class="slidesWrapper relative h-48 w-full grid grid-cols-1 place-items-center">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="song-1">
+      <img src={atelier_sport_sante} alt="song" class="w-auto h-auto object-contain bg-center rounded-lg">
     </label>
-    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="song-2">
-      <img src={duo} alt="song" class="w-full h-full rounded-lg object-contain bg-center">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="song-2">
+      <img src={duo} alt="song" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
-    <label class="slide absolute w-4/5 h-96 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="song-3">
-      <img src={helena_cliente_squats} alt="song" class="w-full h-full rounded-lg object-contain bg-center">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="song-3">
+      <img src={helena_cliente_squats} alt="song" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
   </div>
 </carousel>
