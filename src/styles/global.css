@@ -22,7 +22,7 @@ section {
 }
 
 p {
-  @apply text-base md:text-lg text-gray-dark;
+  @apply text-base md:text-lg text-black;
 }
 
 h1 {
@@ -30,11 +30,11 @@ h1 {
 }
 
 h2 {
-  @apply font-Josefin italic font-semibold md:leading-tight tracking-normal text-blue pb-4  sm:leading-none text-2xl md:text-3xl lg:text-4xl;
+  @apply font-Josefin italic font-semibold md:leading-tight tracking-normal text-black pb-4 sm:leading-none text-2xl md:text-3xl lg:text-4xl;
 }
 
 h3 {
-  @apply font-Josefin italic font-semibold text-xl md:text-2xl text-gray-dark py-3;
+  @apply font-Josefin italic font-semibold text-xl md:text-2xl text-black py-3;
 }
 
 h4 {
@@ -62,12 +62,12 @@ h4 {
 }
 
 .btn-primary {
-  @apply bg-blue text-white font-medium hover:bg-blue-dark
+  @apply bg-blue text-black font-medium hover:bg-blue-dark
          focus:ring-blue active:bg-blue hover:border-white;
 }
 
 .btn-secondary {
-   @apply bg-white border-blue text-blue hover:bg-blue-dark hover:text-white font-medium;
+   @apply bg-black border-blue text-blue hover:bg-blue-dark hover:text-white font-medium;
 }
 
 .sellingPoint-card {
