@@ -13,14 +13,14 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
   <div class="slidesWrapper relative h-48 w-full grid grid-cols-1 place-items-center">
-    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="song-1">
-      <img src={atelier_sport_sante} alt="song" class="w-auto h-auto object-contain bg-center rounded-lg">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="slide-1">
+      <img src={atelier_sport_sante} alt="helena accompagne corrige la position de sa client" class="w-auto h-auto object-contain bg-center rounded-lg">
     </label>
-    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="song-2">
-      <img src={duo} alt="song" class="w-auto h-auto rounded-lg object-contain bg-center">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="slide-2">
+      <img src={duo} alt="couple fait du sport" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
-    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="song-3">
-      <img src={helena_cliente_squats} alt="song" class="w-auto h-auto rounded-lg object-contain bg-center">
+    <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="slide-3">
+      <img src={helena_cliente_squats} alt="helena corrige la position squat de sa cliente" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
   </div>
 </carousel>
@@ -38,19 +38,19 @@ import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
   }
 
 
-  #item-1:checked ~ .slidesWrapper #song-3, #item-2:checked ~ .slidesWrapper #song-1, #item-3:checked ~ .slidesWrapper #song-2 {
+  #item-1:checked ~ .slidesWrapper #slide-3, #item-2:checked ~ .slidesWrapper #slide-1, #item-3:checked ~ .slidesWrapper #slide-2 {
     transform: translatex(-40%) scale(.8);
     opacity: .4;
     z-index: 0;
   }
 
-  #item-1:checked ~ .slidesWrapper #song-2, #item-2:checked ~ .slidesWrapper #song-3, #item-3:checked ~ .slidesWrapper #song-1 {
+  #item-1:checked ~ .slidesWrapper #slide-2, #item-2:checked ~ .slidesWrapper #slide-3, #item-3:checked ~ .slidesWrapper #slide-1 {
     transform: translatex(40%) scale(.8);
     opacity: .4;
     z-index: 0;
   }
 
-  #item-1:checked ~ .slidesWrapper #song-1, #item-2:checked ~ .slidesWrapper #song-2, #item-3:checked ~ .slidesWrapper #song-3 {
+  #item-1:checked ~ .slidesWrapper #slide-1, #item-2:checked ~ .slidesWrapper #slide-2, #item-3:checked ~ .slidesWrapper #slide-3 {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
