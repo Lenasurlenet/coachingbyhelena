@@ -48,7 +48,7 @@ let title = 'My Astro Site';
          <div class="container">
             <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
                 
-              <div class="sellingPoint-card" data-aos="flip-right" >
+              <article class="sellingPoint-card" data-aos="flip-right" >
                     <img src={activity} alt="icon activity">
                     <h4>
                       Evaluation
@@ -56,9 +56,9 @@ let title = 'My Astro Site';
                     <p class="text-md text-white  py-4">
                      Test de condition physique. <br> Déterminons votre objectif.
                     </p>
-              </div>
+              </article>
 
-              <div class="sellingPoint-card" data-aos="flip-right">
+              <article class="sellingPoint-card" data-aos="flip-right">
                     <img src={chart} alt="icon activity">
                     <h4>
                       Suivi personnalisé
@@ -66,8 +66,8 @@ let title = 'My Astro Site';
                     <p class="text-md text-white  py-4">
                       Vos progrès sont quantifiés <br> Vos entrainements évolutifs.
                     </p>
-                </div>
-                <div class="sellingPoint-card" data-aos="flip-right">
+                </article>
+                <article class="sellingPoint-card" data-aos="flip-right">
                     <img src={monitor} alt="icon screen">
                     <h4>
                       Domicile, extérieur, visio..
@@ -75,7 +75,7 @@ let title = 'My Astro Site';
                     <p class="text-md text-white py-4">
                       Gagnez du temps et du confort <br> Choisissez où a lieu votre séance.
                     </p>
-                </div>
+                </article>
             </div>
          </div>
        </div>
@@ -108,7 +108,7 @@ let title = 'My Astro Site';
               <div class="coachingFeatures mt-6 lg:w-2/5" data-aos="fade-left">
                 <ul class="mt-10">
                     <li>
-                        <div class="flex items-start">
+                        <article class="flex items-start">
                             <div class="flex-shrink-0">
                                 <div class="flex plate-items-center h-12 w-12 rounded-lg p-2 bg-black">
                                    <img src={dumbell} alt="">
@@ -122,10 +122,10 @@ let title = 'My Astro Site';
                                   Pour gagner en force et en énergie.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </li>
                     <li class="mt-10">
-                        <div class="flex items-start">
+                        <article class="flex items-start">
                             <div class="">
                                 <div class="flex plate-items-center h-12 w-12 rounded-lg p-2 bg-black">
                                   <img src={scale} alt="">
@@ -139,10 +139,10 @@ let title = 'My Astro Site';
                                   Pour dessiner votre silhouette et atteindre votre objectif de poids.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </li>
                     <li class="mt-10">
-                        <div class="flex items-start">
+                        <article class="flex items-start">
                             <div class="flex-shrink-0">
                                 <div class="flex plate-items-center h-12 w-12 rounded-lg p-2 bg-black">
                                   <img src={battery} alt="">   
@@ -156,13 +156,13 @@ let title = 'My Astro Site';
                                   Prendre soin de son corps en améliorer sa qualité de vie. en gardant un corps fonctionnel et tonique.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </li>
                 </ul>
                 <div class="relative w-full mt-16">
                   <a href="/coaching/#coaching" class="absolute right-5 flex flex-end items-center text-font-medium text-base md:text-lg xl:text-xl text-pink hover:text-pink-light active:text-pink-dark transition transform  " >
                     Tous les programmes
-                    <img src={arrowright} alt="" class="ml-3 font-medium">
+                    <img src={arrowright} alt="icone flêche vers la droite" class="ml-3 font-medium">
                   </a>
                 </div>
               </div>
@@ -194,11 +194,11 @@ let title = 'My Astro Site';
                   </p>
                   <div class="relative flex flex-col sm:flex-row sm:space-x-4">
                     <a href="/helena/#contact" class="btn btn-primary">
-                        Booker une session
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
+                      Booker une session
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
                     </a>
                   </div>
                 </div>
