@@ -63,12 +63,12 @@ h4 {
 }
 
 .btn-primary {
-  @apply bg-blue text-black font-medium hover:bg-blue-dark
+  @apply bg-blue font-medium text-white hover:bg-blue-dark
          focus:ring-blue active:bg-blue hover:border-white;
 }
 
 .btn-secondary {
-   @apply bg-black border-blue text-blue hover:bg-blue-dark hover:text-white font-medium;
+   @apply bg-black border-blue text-blue-light hover:bg-blue-dark hover:text-white font-medium;
 }
 
 .sellingPoint-card {

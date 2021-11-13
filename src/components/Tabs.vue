@@ -1,5 +1,5 @@
 <template>
-  <section class="tabs w-full bg-blue py-8 md:py-12 lg:py-16">
+  <section id="priceTabs" class="tabs w-full bg-blue py-8 md:py-12 lg:py-16">
     <div class="container">
       <div class="block_title pb-4 mb-8 md:mb-10">
         <h2 class="text-white">Tarifs coaching sportif privé</h2>
