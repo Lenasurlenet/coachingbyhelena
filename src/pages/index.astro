@@ -38,14 +38,14 @@ let title = 'My Astro Site';
       <CommonHead />
     </head>
 
-    <BaseLayout title="coaching by Helena">
+    <BaseLayout title="Training by josephine">
     
       <!-- Header -->
       <Header />
 
       <!-- offer -->
        <div id="sellinPoints" class="pb-10">
-         <div class="container">
+         <div class="customContainer">
             <div class="sellingPoints-wrapper -mt-12 md:-mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
                 
               <article class="sellingPoint-card" data-aos="flip-right" >
@@ -83,17 +83,17 @@ let title = 'My Astro Site';
       <main id="homeMain" class="max-w-full">
         <!-- Quote -->
 
-        <!-- Coaching preview -->
-        <section id="coachingPreview" class="coaching bg-white">
-          <div class="container">
+        <!-- training preview -->
+        <section id="trainingPreview" class="training bg-white">
+          <div class="customContainer">
             <div class="blockTitle" data-aos="fade-right">
               <h2>Entraînements sur-mesures</h2>
               <p class="undertitle text-black">
                 Déterminons votre objectif et un parcours d'accompagnement.
               </p>
             </div>
-            <div class="coaching__content w-full block lg:py-16 lg:flex justify-stretch">
-              <div class="coaching__images mt-10 lg:-mx-4 lg:mt-0 lg:w-2/3 xl:w-3/5">
+            <div class="training__content w-full block lg:py-16 lg:flex justify-stretch">
+              <div class="training__images mt-10 lg:-mx-4 lg:mt-0 lg:w-2/3 xl:w-3/5">
                   <div class="relative space-y-4" data-aos="fade-righ">
                       <div class="flex items-end justify-start space-x-4">
                           <img class="rounded-lg shadow-lg w-40 md:w-72 lg:w-56 xl:w-72" src="https://images.pexels.com/photos/5262963/pexels-photo-5262963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="1"/>
@@ -105,7 +105,7 @@ let title = 'My Astro Site';
                       </div>
                   </div>
               </div>
-              <div class="coachingFeatures mt-6 lg:w-2/5" data-aos="fade-left">
+              <div class="trainingFeatures mt-6 lg:w-2/5" data-aos="fade-left">
                 <ul class="mt-10">
                     <li>
                         <article class="flex items-start">
@@ -160,7 +160,7 @@ let title = 'My Astro Site';
                     </li>
                 </ul>
                 <div class="relative w-full mt-16">
-                  <a href="/coaching/#coaching" class="absolute right-5 flex flex-end items-center text-font-medium text-base md:text-lg xl:text-xl text-pink-dark hover:text-pink active:text-pink-dark transition transform" >
+                  <a href="/trainings/#trainings" class="absolute right-5 flex flex-end items-center text-font-medium text-base md:text-lg xl:text-xl text-pink-dark hover:text-pink active:text-pink-dark transition transform" >
                     Tous les programmes
                     <img src={arrowright} alt="icone flêche vers la droite" class="ml-3">
                   </a>
@@ -176,8 +176,8 @@ let title = 'My Astro Site';
         <Testimonials/>
 
         <!-- CTA -->
-        <section id="coaching__CTA" class="bg-white md:px-0 py-8 md:py-12 lg:-space-y-16">
-          <div class="container">
+        <section id="training__CTA" class="bg-white md:px-0 py-8 md:py-12 lg:-space-y-16">
+          <div class="customContainer">
             <div class="flex flex-col-reverse md:flex md:flex-row items-center">
               <div class="w-full md:w-1/2" data-aos="fade-right" >
                 <div class="w-full h-auto overflow-hidden rounded-lg shadow-xl pb-8">
@@ -193,7 +193,7 @@ let title = 'My Astro Site';
                     Une coach pour vous garder motivé.e et vous faire progresser.
                   </p>
                   <div class="relative flex flex-col sm:flex-row sm:space-x-4">
-                    <a href="/helena/#contact" class="btn btn-primary">
+                    <a href="/josephine/#contact" class="btn btn-primary">
                       Booker une session
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -209,8 +209,7 @@ let title = 'My Astro Site';
 
       </main>
       <!-- Footer -->
-    
-    
+     
     </BaseLayout>
 
 </html>
