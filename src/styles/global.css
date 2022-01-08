@@ -1,16 +1,15 @@
 /* src/styles/global.css */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500;1,600;1,700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500;1,600;1,700&family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-  min-width:100%;
-  min-height:100%;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
   background-color: #fafbfc;
 }
-
-
 
 @tailwind base;
 
@@ -18,8 +17,8 @@ section {
   @apply py-12 lg:py-16 max-w-full bg-white;
 }
 
-.container {
-  @apply mx-0 w-full max-w-screen-2xl h-full py-0 px-6 lg:px-8 xl:px-10 2xl:px-12;
+.customContainer {
+  @apply w-full sm:w-5/6 2xl:max-w-[1440px] mx-auto px-6;
 }
 
 p {
@@ -39,9 +38,8 @@ h3 {
 }
 
 h4 {
-@apply font-Josefin font-semibold  text-lg md:text-xl py-4;
+  @apply font-Josefin font-semibold  text-lg md:text-xl py-4;
 }
-
 
 @tailwind components;
 
@@ -68,7 +66,7 @@ h4 {
 }
 
 .btn-secondary {
-   @apply bg-black border-blue text-blue-light hover:bg-blue-dark hover:text-white font-medium;
+  @apply bg-black border-blue text-blue-light hover:bg-blue-dark hover:text-white font-medium;
 }
 
 .sellingPoint-card {
@@ -89,9 +87,7 @@ h4 {
 
 .menu-item {
   @apply text-sm sm:text-base md:text-lg font-normal capitalize tracking-wide text-white transition-colors duration-200 hover:text-pink-light active:text-pink-dark;
-} 
-
-
+}
 
 @tailwind utilities;
 

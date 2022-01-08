@@ -2,28 +2,29 @@
 import arrowleft from '../assets/icons/arrowleft.svg';
 import arrowright from '../assets/icons/arrowright.svg';
 import duo from '../assets/images/duo.jpg';
-import helena from '../assets/images/helena.jpg';
-import helena_cliente_squats from '../assets/images/helena_cliente_squats.jpg';
 import atelier_sport_sante from '../assets/images/atelier_sport_sante.jpg';
 
 ---
 
-<carousel class="wrapper w-full max-w-3xl h-48 md:h-96 overflow-x-hidden">
+<section>
+
+<carousel class="customContainer wrapper w-full max-w-3xl h-48 md:h-96 overflow-x-hidden">
     <input type="radio" name="slider" id="item-1" checked>
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
   <div class="slidesWrapper relative h-48 w-full grid grid-cols-1 place-items-center">
     <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-1" id="slide-1">
-      <img src={atelier_sport_sante} alt="helena accompagne corrige la position de sa client" class="w-auto h-auto object-contain bg-center rounded-lg">
+      <img src={atelier_sport_sante} alt="josephine accompagne corrige la position de sa client" class="w-auto h-auto object-contain bg-center rounded-lg">
     </label>
     <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-2" id="slide-2">
       <img src={duo} alt="couple fait du sport" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
     <label class="slide absolute w-4/5 h-48 left-0 right-0 m-auto transition transform ease-out cursor-pointer" for="item-3" id="slide-3">
-      <img src={helena_cliente_squats} alt="helena corrige la position squat de sa cliente" class="w-auto h-auto rounded-lg object-contain bg-center">
+      <img src="https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="josephine corrige la position squat de sa cliente" class="w-auto h-auto rounded-lg object-contain bg-center">
     </label>
   </div>
 </carousel>
+</section>
 
 <style lang="scss">
 

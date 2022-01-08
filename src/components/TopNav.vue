@@ -4,7 +4,7 @@
       <nav class="relative text-lg flex items-center justify-center fadeIn">
         <ul class="flex items-center space-x-6">
           <li>
-            <a href="/coaching" aria-label="Coaching" title="Coaching" class="menu-item">coaching</a>
+            <a href="/trainings" aria-label="trainings" title="trainings" class="menu-item">trainings</a>
           </li>
           <li>
             <a href="/" aria-label="logo" title="logo1" class=" px-4 md:hidden">
@@ -26,7 +26,7 @@
             </a>
           </li>
           <li>
-            <a href="/helena" aria-label="Helena" title="Helena" class="menu-item">helena</a>
+            <a href="/josephine" aria-label="josephine" title="josephine" class="menu-item">Josephine</a>
           </li>
         </ul>
       </nav>

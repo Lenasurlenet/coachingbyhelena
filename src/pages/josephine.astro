@@ -1,0 +1,264 @@
+---
+// Component Imports
+import CommonHead from '../components/CommonHead.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Carousel from '../components/Carousel.astro';
+
+// Images
+
+
+// Icons
+import atsign from '../assets/icons/atsign.svg';
+import phonecall from '../assets/icons/phonecall.svg';
+import send from '../assets/icons/send.svg';
+import quotes from '../assets/icons/quotes.svg';
+
+// You can import components from any supported Framework here!
+
+let title = 'Training with Josephine | Josephine';
+
+---
+
+<html lang="fr">
+<head>
+  <CommonHead />
+</head>
+
+  <BaseLayout>
+    <section id="heroTraining" class="hero block bg-gradient-to-r from-black to-blue pt:12 md:pt-16 lg:pt-20 md:max-h-3/4 lg:max-h-2/3">  
+      <div class="customContainer md:flex" data-aos="zoom-out">
+        <div class="right md:w-1/2 xl:h-2/5">
+          <img src="https://images.unsplash.com/photo-1603479394702-7dd40380a97f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Portrait de Josephine" class="relative h-96 max-w-full block rounded-lg object-cover object-center " />
+        </div>
+        <div class="hero__content block p-4 lg:px-8 md:w-1/2 xl:3/5 fadeIn">
+          <div class="max-width-prose py-4">
+            <p class="overtitle">
+               Coach sportif diplomée d'Etat. 
+            </p>
+            <h1>
+              Josephine
+            </h1>
+            <p class="undertitle">
+              Passionnée par le sport et la nutrition, j'en ai fait mon métier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="mainJosephine">
+
+      <section id="about" class="relative overflow-x-hidden">
+        <div class="customContainer">
+          <div class="flex flex-wrap items-center">
+            <div class="w-full md:w-1/2 lg:w-3/5 md:h-128 md:pr-8 mb-20 md:mb-0" data-aos="fade-rigt">
+              <div class="about__text">
+                <h2>Fondatrice de Training with Josephine</h2>
+                <p class="undertitle text-black" >Le sport, la santé et l’alimentation ont toujours été très importants pour moi.</p> <br>
+                <p>J’ai travaillé comme consultante pendant 15 ans. Années pendant lesquelles j’ai pu observer : des personnes avec des problèmes liés à leur mauvaise posture (douleurs au dos, tendinites..) ou des difficultés à retrouver leur forme physique après un accouchement, ou après avoir pris quelques kilos.</p> <br>
+                <p>À 40 ans, j’ai décidé de faire de ma passion mon métier et de me reconvertir. Je suis devenue coach sportif pour aider les gens à prendre soin de leur corps et de leur santé. Je veux les aider à améliorer leur qualité de vie, en sachant qu’ils peuvent se dépasser chaque jour.</p>
+              </div>
+            </div>
+            <div class="right w-full md:w-1/2 lg:w-2/5" data-aos="fade-left">
+              <div class="w-full h-64 md:h-128">
+                <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1616994488535-d6ede04af436?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Portrait de Josephine">
+              </div>
+              <div class="w-full rounded-b-lg rounded-t-none bottom-4 xl:-inset-8 quote bg-black p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-9">
+                <p class="text-white">Mes capacités analytiques, acquises lors de mes expériences antérieures, ainsi que mes connaissances sportives, peuvent vous aider à atteindre vos objectifs et dépasser vos limites, quelque soit votre point de départ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Credentials-->
+    
+      <section id="credentials" class="bg-blue">
+        <div class="customContainer flex-row-reverse lg:flex md:items-start">
+          <div class="right w-full p-6" data-aos="fade-left">
+            <div class="max-w-prose">
+              <div class="blockTitle">
+                <h2 class="pt-0 text-white">Mes qualifications</h2>
+                <p class="undertitle">
+                  Je suis devenue coach sportif à domicile afin d’accompagner les client.e.s au plus près.
+                </p>
+              </div>
+               <br>
+              <p class="text-white">
+                Le Training sportif privé permet un accompagnement inégalable qui profite grandement à l’accompagné.e dans l’atteinte de ses objectifs. <br>
+
+                Je propose des ateliers variés pour vous emmener jusqu’au bout de votre défi, avec une progression continue dans vos qualités physiques et votre auto estime. <br>
+
+                Toujours à l’écoute, je vous proposerai les méthodes les plus actuelles de remise en forme, adaptées à votre profile.
+              </p>
+            </div>
+          </div>
+          <div class="card__wrapper md:flex md:space-x-3" data-aos="fade-right">
+            <div class="card h-72">
+              <div class="flex items-center space-x-3">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-w-20 w-8 h-8 text-pink" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
+                <h4 class="text-white"> Coach sportif diplomée d'état</h4>
+              </div>
+              <p class="text-white">Coach fitness, musculation et haltérophilie sport santé</p>
+            </div>
+            <div class="card h-72 bg-black rounded-lg px-4 md:px-6 md:w-1/2 lg:px-8 mb-0 lg:mb-0">
+              <div class="flex items-center space-x-3">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="award" class="svg-inline--fa fa-award fa-w-12 w-8 h-8 text-pink" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></svg>
+                <h4 class="text-white ">Formation en Hormonologie</h4>
+              </div>
+              <p class="text-white ">Compréhension des hormones dans l’optique de la perte de poids ou de la prise de masse.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="customContainer">
+         <div class="blockTitle" data-aos="fade-left">
+          <h2>Des clientes satisfaites</h2>
+           <p class="undertitle text-black">Quelques mots de mes coachées.</p>
+         </div>
+          <div class="my-10 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-3">
+            <div>
+              <article class="card_testimonial-full p-6 bg-black rounded-xl shadow-2xl overflow-hidden">
+                <img class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Photo de profil de Kamar">
+                <blockquote class="py-4">
+                  <svg class="w-10 h-10 text-pink fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+                    <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
+                  </svg>
+                  <p class="mt-3 text-white line-clamp-3 hover:line-clamp-none">
+                    Ses connaissances aussi bien en anatomie qu’en physiologie font que Josephine n’est pas un simple coach qui a des objectifs personnels à atteindre, non. Elle adapte et tire le meilleur de nous mêmes en nous poussant à nous améliorer même dans nos zones de faiblesse de sorte que les petites fragilités deviennent des forces. Donc un vrai accompagnement personnalisé et attentif.
+                    <br>
+                    Avec trois séances par semaine en moyenne et des conseils diététiques, au bout de neuf mois, je vois ( et mon entourage aussi) de réels progrès.
+                    <br>
+                    Mille mercis Josephine.
+                  </p>
+                </blockquote>
+                <figcaption class="font-medium py-4">
+                  <p class="text-blue-light">
+                    Kamar
+                  </p>
+                  <p class="text-white">
+                    Médecin
+                  </p>
+                </figcaption>
+              </article>
+            </div>
+            <div>
+              <article class="card_testimonial-full p-6 bg-black rounded-xl shadow-2xl overflow-hidden">
+                <img class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Photo de profil de Céline">
+                <blockquote class="py-4">
+                  <svg class="w-10 h-10 text-pink fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+                    <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
+                  </svg>
+                  <p class="mt-3 text-white line-clamp-3 hover:line-clamp-none">
+                    Un parfait mélange d’écoute de son élève et d’exigence, pour l’entraîner à se dépasser. J’ai débuté les séances de Training avec Josephine il y a un peu plus de 3 mois, pour retrouver de la condition physique.
+                    Elle est attentive à mes objectifs et à mes douleurs. Elle sait les comprendre, me les expliquer et proposer des exercices adaptés. Elle m’a aidée à reprendre conscience des différentes parties de mon corps, à ré-utiliser des articulations douloureuses. Le travail de renforcement est ciblé, intensif et adapté à chaque séance. J’ai augmenté ma force musculaire et je me sens mieux dans mon corps.
+                    <br>
+                    J’apprécie également tous les conseils nutritionnels Josephine, qui complètent son encadrement. Josephine me pousse à aller plus loin à chaque séance et m’encourage. J’y prends beaucoup de plaisir.
+                    <br>
+                    Je suis en totale confiance ! Merci Josephine !
+                  </p>
+                </blockquote>
+                <figcaption class="font-medium py-4">
+                  <p class="text-blue-light">
+                    Jean
+                  </p>
+                  <p class="text-white">
+                    Libraire
+                  </p>
+                </figcaption>
+              </article>
+            </div>
+            <div>
+              <article class="card_testimonial-full p-6 bg-black rounded-xl shadow-2xl overflow-hidden">
+                <img class="w-24 h-24 md:w-28 md:h-28 rounded-full mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="photo de Lena">
+                <blockquote class="py-4">
+                  <svg class="w-10 h-10 text-pink fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+                    <path d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"></path>
+                  </svg>
+                  <p class="mt-3 text-white line-clamp-3 hover:line-clamp-none">
+                    En seulement 4 semaines, je vois déjà des résultats sur mon poids, mais surtout, je redécouvre mon corps et tous ses muscles laissés à l’abandon pendant 2 confinements. Josephine est très à l’écoute et regorge de motivation quand vous en manquez.
+                  </p>
+                </blockquote>
+                <figcaption class="font-medium py-4">
+                  <p class="text-blue-light">
+                    Lena
+                  </p>
+                  <p class="text-white">
+                    Designer web
+                  </p>
+                </figcaption>
+              </article>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <!-- photoGallery -->
+      <section id="photoGallery" class="bg-black">
+        <div class="customContainer grid grid-cols-1 place-items-center">
+          <div class="blockTitle mb-6">
+            <h2>Gallerie photos</h2>
+            <p class="undertitle text-gray-light">Ambiance Training en images</p>
+          </div>
+          <Carousel />
+        </div>
+      </section>      
+
+      <section id="contact" class="bg-white">
+        <div class="customContainer">
+          <div class="relative px-4 mx-auto">
+            <div class="blockTitle text-center mb-8 lg:mb-12" data-aos="fade-right">
+              <span class="text-lg text-black font-medium">Des questions?</span>
+              <h2>Contactez-moi</h2>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="flex flex-wrap items-start -mx-4 mb-20" data-aos="fade-up-right">
+                <div class="w-full lg:w-2/3 px-4 mb-4 lg:mb-0">
+                  <form name="contact" method="POST" data-netlify="true"
+                        class="form mt-6 text-white bg-black rounded-lg p-6 md:p-8"
+                  >
+                    <div class="space-y-3 md:space-y-0 md:space-x-5 md:flex">
+                      <p class="w-full">
+                        <label class="block w-full mb-2 text-sm font-medium text-white">Nom <input type="text" name="name" class="block w-full py-2 text-black bg-white border border-gray-light rounded-md focus:outline-none focus:ring"/></label>   
+                      </p>
+                      <p class="w-full">
+                        <label class="block mb-2 text-sm font-medium text-white">Prénom <input type="text" name="name" class="block w-full py-2 text-black bg-white border border-gray-light rounded-md focus:outline-none focus:ring"/></label>   
+                      </p>
+                    </div>
+
+                    <p>
+                      <label class="block mb-2 text-sm font-medium text-white">Courriel <input type="email" name="email" class="block w-full py-2 text-black bg-white border border-gray-light rounded-md focus:outline-none focus:ring"/></label>
+                    </p>
+                    <p>
+                      <label class="block mb-2 text-sm font-medium text-white">Message <textarea name="message" class="block w-full h-40 py-2 text-black bg-white border border-gray-light rounded-md focus:border-blue focus:outline-none focus:ring"></textarea></label>
+                    </p>
+                    <div class="flex justify-start mt-6">
+                      <button type="submit" class="btn btn-primary space-x-3">
+                        Envoyer
+                        <img src={send} alt="send icon" class="pl-2">
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="w-full pt-8 lg:w-1/3 lg:pt-8 px-4 space-y-6">
+                  <div class="flex items-center space-x-3">
+                    <img src={phonecall} alt="phone icon">
+                    <p class="text-base md:text-lg font-bold text-black">+33  6 83 23 64 07</p>
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <img src={atsign} alt="at sign icon">
+                    <p class="texte-base md:text-lg font-bold text-black">contact@TrainingbyJosephine.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+   
+   </BaseLayout>
+</html>
